@@ -41,4 +41,12 @@
       <ProjectReference Include="..\WebApi\WebApi.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Update="appsettings.test.json">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
