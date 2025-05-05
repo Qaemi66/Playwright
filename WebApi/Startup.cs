@@ -20,7 +20,7 @@ public class Startup(IConfiguration configuration)
 	public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 	{
 		// Configure the HTTP request pipeline.
-		if (env.IsDevelopment())
+		if (env.IsDevelopment() || env.EnvironmentName == "test")
 		{
 			app.UseSwagger();
 			app.UseSwaggerUI();
